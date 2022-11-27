@@ -1,0 +1,231 @@
+/* Colors */
+
+    :root {
+        --blue2: #59afd6;
+        --black: #444444;
+        --lightblue: #96cde6;
+        --lightgrey: #b4b4b4;
+
+
+    }
+    
+
+/* General Settings */
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html * {
+    box-sizing: border-box;
+}
+
+
+    /* Fonts */
+        /* Regular */
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf) format('ttf');
+    font-weight: normal;
+}
+      /* Light */
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/Montserrat-Light.ttf);
+    font-weight: light;
+}
+
+       /* Bold */
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: bold;
+}
+
+body {
+    font-family: montserrat;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+/* Main Header */
+
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    margin: 0 20px;
+}
+
+#logo-icon {
+    margin-top: 15px;
+}
+
+
+/* Hero Section */
+
+
+
+#hero-section { 
+    display: flex;
+    flex-direction: column;
+    background: url(../img/header-image.jpg) no-repeat center / contain;
+    height: 475px;
+    width: 100%;
+    padding: auto;
+    justify-content: center;
+    z-index: 1;
+}
+
+#hero-end {
+    background-color: var(--blue2);
+    height: 2px;
+}
+
+
+header ul li {
+    display: none;
+}
+
+
+
+.inner-wrapper {
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 50px;
+    text-align: right;
+    position: absolute;
+    top: 115px;
+    right: 0;
+    z-index: 100;
+
+}
+
+
+
+
+/* Content */
+
+
+
+h1 {
+    text-transform: uppercase;
+    color: white     ;
+}
+
+h2 {
+    color: var(--blue2);
+    font-family: montserrat;
+    font-size: 16px;
+
+}
+
+#hero-h2 {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+
+.links {
+    color: var(--blue2);
+}
+
+
+#cta-info {
+    border: 2px solid var(--lightblue);
+    border-radius: 50px;
+    padding: 12px;
+    letter-spacing: 1px;
+    margin: 10px;
+    width: 200px;
+    color: white;
+    background-color: var(--blue2);
+    font-weight: bold;
+}
+
+
+
+article {
+    margin-bottom: 50px;
+}
+
+#article-gallery {
+    background-color: var(--black);
+    text-align: center;
+}
+
+#article-gallery p {
+    color: var(--lightgrey);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 2em;
+}
+
+.section-wrapper {
+    padding: 20px 40px;
+}
+
+
+.images {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+
+/* FAQ Section */
+
+#faq-section {
+    text-align: center;
+}
+
+#cta-termin {
+    text-transform: uppercase;
+    border: 2px solid var(--lightblue);
+    border-radius: 50px;
+    color: white;
+    background-color: var(--blue2);
+    padding: 15px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Footer */
+
+#footer-kontakt {
+    background-color: var(--blue2);
+    height: 270px;
+    color: white;
+    text-align: center;
+}
+
+#footer-kontakt img {
+    margin: 40px;
+}
+
+#footer-kontakt address {
+    text-align: center;
+    font-style: normal;
+    padding: 0px 40px;
+    font-size: 14px;
+}
+
+/* Copyright */
+
+#footer-copy {
+    background: var(--black);
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 11px;
+}
