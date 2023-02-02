@@ -11,8 +11,6 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
-/* Klassen werden mit einem Punkt angesprochen */
 .batch {
     position: absolute;
     top: 300px;

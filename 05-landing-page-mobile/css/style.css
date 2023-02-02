@@ -31,10 +31,10 @@ h1 {
     margin-bottom: 0;
 }
 
-/* Pseudo-Klassen
+/* Pseudo-Klassen */
 h1::first-letter {
     color: black;
-} */
+}
 
 /* Klassen-Selector */
 .subtitle {
@@ -57,14 +57,14 @@ h1::first-letter {
 }
 
 .left-space {
-    margin-left: 30px;
+    margin-left: 27px;
 }
 
 .batch {
     background-color: black;
     color: white;
-    width: 154px;
-    height: 157px;
+    width: 166px;
+    height: 166px;
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
@@ -72,7 +72,7 @@ h1::first-letter {
     font-weight: bolder;
     font-size: 37px;
     position: absolute;
-    top: 426px;
+    top: 440px;
     left: 0;
     z-index: -1;
 }
@@ -89,7 +89,7 @@ h1::first-letter {
 #lady {
     position: absolute;
     top: 282px;
-    right: -56px;
+    right: 0;
 }
 
 form button {

@@ -1,0 +1,84 @@
+@@ -1,84 +0,0 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Login Page</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="welcome">
+
+            <h1>Welcome Back</h1>
+
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit facere corporis magnam nam, esse repellendus excepturi vel culpa? Eaque deserunt debitis cupiditate, perspiciatis libero iusto minima dicta repudiandae aliquam obcaecati.
+            </p>
+
+            <br>
+
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+        </div>
+
+
+        <div class="login">
+
+            <form action="welcome.html" class="login-form" method="post" name="login-form" onsubmit="return signIn()">
+
+                <!-- Username / E-Mail -->
+                <label for="username" id="username" >E-Mail</label>
+                <input autocomplete="off" type="text" id="username" name="username" autofocus>
+                <div id="email-error" style="visibility: hidden;">Please enter a valid e-mail address</div>
+
+                <!-- PWD -->
+                <label for="pwd" id="pwd">Password</label>
+                <input type="password" id="pwd" name="pwd">
+                <div id="pwd-error" style="visibility: hidden;">Please enter a valid password</div>
+            </form>
+
+            <!-- Stay logged in  -->
+            <div class="checkbox">
+                <input type="checkbox" name="login-cache" id="login-cache">
+                <label for="login-cache" id="login-cache">Remember Me</label>
+            </div>
+
+            <br>
+
+            <!-- SignIn Button -->
+            <div class="signin">
+                <input type="button" value="Sign In" onclick="signIn()" id="signin">
+                <a href="#" id="pwd-loss">Forgot your password?</a>
+            </div>
+
+            <br>
+       
+            <div class="policy">
+                <p>By signing in you agree to our</p>
+                <div class="policy-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+ 
+
+    <script src="js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/b8bd65a296.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
