@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Check Questionnaire</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    
+
+    <div class="container">
+
+        <h1>Questionnaire</h1>
+
+
+        <ul>
+            <li>
+                <h5>Wie wird JavaScript (lokal) im HTML Dokument angewendet?</h5>
+            </li>
+        </ul>
+
+        <p id="answer">JS kann direkt im HTML eingebunden werden ohne ein zusätzliches *.js File zu erstellen. Alles was in JS geschrieben wird, wird direkt vom Browser interpretiert.</p>
+
+        <ul>
+            <li>
+                <h5>Wie wird JavaScript (lokal) in ein Dokument eingebunden?</h5>
+            </li>
+        </ul>
+
+        <p id="answer">JS wird mit dem Script Tag eingebunden und sollte möglichst gegen Ende des Body-Tags positioniert werden.</p>
+
+        <ul>
+            <li>
+                <h5>Welche Besonderheit muss beachtet werden, wenn eine JavaScript Datei aus externer Quelle eingebunden wird? (Datenschutz)</h5>
+            </li>
+        </ul>
+
+        <p id="answer">???</p>
+
+        <ul>
+            <li>
+                <h5>Wie schreibt man einen <pre>Kommentar</pre> (einzeilig bzw. mehrzeilig) in JavaScript?</h5>
+            </li>
+        </ul>
+
+        <p id="answer"> Einzeilig mit zwei Forward Slashes und Mehrzeilig mit Forward Slash + Stern zu Beginn und am Ende des mehrzeiligen Kommentars mit Stern + Forward Slash abschließen.</p>
+
+
+
+        <ul>
+            <li>
+                <h5>Wie wird eine Variable deklariert?</h5>
+            </li>
+        </ul>
+
+        <p id="answer">Eine Variable wird mit <strong>var</strong> + Zuweisungsoperator (=) und dem Wert deklariert. Beispiel: <br> var name = "Maria"; </p>
+
+        <ul>
+            <li>
+                <h5>Wie wird eine Konstante deklariert?</h5>
+            </li>
+        </ul>
+
+        <p id="answer">Eine Konstante wird genau wie bei var deklariert, mit dem Unterschied, dass <strong>const</strong> statt <strong>var</strong> verwendet wird. <br> Beispiel: const name = "Maria";</p>
+
+        <ul>
+            <li>
+                <h5>Wo liegt der Unterschied zwischen <strong>var</strong>, <strong>let</strong> und <strong>const</strong>?</h5>
+            </li>
+        </ul>
+
+
+        <p id="answer"> "var" ist die veraltete Schreibweise, um eine Variable zu deklarieren. Der Keyword "var" kann global verwendet werden (global scope), sprich auch außerhalb einer Blocks und der Wert dieser Variable lässt sich immer neu zuweisen. Seit ES6 wurden die Variablen let und const eingeführt. "let" ist ähnlich wie var, der Wert dieser Variable kann ebenfalls neu zugewiesen werden, bei const (eine Konstante) hingegen nicht. Weiters sind die beiden neuen Variabeln let und const sogenannte Block-Scope Variabeln. Sie lassen sich nur innerhalb eines Blocks verwenden.</p>
+
+
+        <ul>
+            <li>
+                <h5>Was ist ein type und welche gibt es?</h5>
+            </li>
+        </ul>
+
+        <p id="answer">Es gibt Strings, Booleans, Integer, undefined und null. Das sind die sogenannenten Primitiven Datentypen. Dann gibt es die komplexe Datentypen wie Funktionen, Arrays und Objekte.</p>
+
+
+        <ul>
+            <li>
+                <h5>Wie kann ein Datentyp geprüft werden?</h5>
+            </li>
+        </ul>
+
+        <p id="answer">Mit typeOf in der Konsole des Browsers. Beispiel: <br> console.log (type of var);</p>
+
+        <ul>
+            <li>
+                <h5>Was ist der Unterschied zwischen undefined und  not defined</h5>
+            </li>
+        </ul>
+
+        <p id="answer">Bei undefined wurde die Variable definiert (var name) aber keinem Wert zugewiesen, sprich ohne Zuweisungsoperator. Bei der anderen (not (yet) :P defined) wurde die Variable überhaupt nicht definiert.</p>
+
+        <ul>
+            <li>
+                <h5>Wo kann ich meinen JavaScript Code "ausprobieren" und debuggen?</h5>
+            </li>
+        </ul>
+
+        <p id="answer">Man kann entweder direkt im Browser den Code über einen Live-Server ausprobieren und ggf. debuggen oder man verwendet diverse Extensions / Features nutzen. Mit Hilfe von Breakpoints kann man Schritt für Schritt nachvollziehen, was mit dem Code passiert.</p>
+
+
+        <ul>
+            <li>
+                <h5>Wo im Browser können Werte ausgegeben werden?</h5>
+            </li>
+        </ul>
+
+        
+        <p id="answer">In der Konsole in den Developer Tools. </p>
+
+        <ul>
+            <li>
+                <h5>Wie kann eine Zeichenkette mit einer weiteren verbunden werden?</h5>
+            </li>
+        </ul>
+
+        <p id="answer">Durch konkatenieren können mehrere Zeichenketten miteinander verbunden werden. Als Operator verwendet man +  <br> Beispiel: <br> let vorname = "Maria"; <br> let nachname = "Repolust"; <br> const name = vorname + " " + nachname; </p>
+
+        <ul>
+            <li>
+                <h5>Wie wird ein <pre>array</pre> in JavaScript deklariert?</h5>
+            </li>
+        </ul>
+
+        <p id="answer">Ein Array wird wie folgt deklariert: let name = [ "Maria", "Frankie", "Michael" ]; </p>
+
+        <ul>
+            <li>
+                <h5>Wie kann ein Element in einem <pre>array</pre> entfernt oder hinzugefügt werden?</h5>
+            </li>
+        </ul>
+
+        <p id="answer">Mit sogenannten Methoden wie pop, delete, slice oder push. Man kann bspw. den letzten oder den ersten Wert eines Arrays entfernen oder hinzufügen usw. <br> Beispiel: <br> const plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato']; <br> console.log(plants.pop()); <br> // Output: "tomato" wird aus dem Array gelöscht.</p>
+
+        <ul>
+            <li>
+                <h5>Wie wird ein <pre>object</pre> deklariert?</h5>
+            </li>
+        </ul>
+
+        <p id="answer"> Ein Objekt wird wie folgt deklariert: <br> let person = {
+            name: "Maria", age: 15, height: 1.80,
+        } </p>
+
+        <ul>
+            <li>
+                <h5>Wie kann ich auf einzelne <pre>Properties</pre> eines Objects zugreifen?</h5>
+            </li>
+        </ul>
+
+        <p id="answer"> objectNamen.propertyName  <br> oder <br> objectNamen['propertyNamen'];  </p>
+
+
+        <ul>
+            <li>
+                <h5>Wie wird eine <pre>for</pre>-Schleife deklariert?</h5>
+            </li>
+        </ul>
+
+        <p id="answer">
+
+            <br>
+
+        for (let i = 0; i <= 9; i++) {
+            // code ausführen
+        };
+            
+        </p>
+
+
+        <ul>
+            <li>
+                <h5>Wie wird ein <pre>if</pre>-Statement deklariert? (mehrere Ausprägungen)</h5>
+            </li>
+        </ul>
+
+        <p id="answer"> <br>
+            for (kondition / bedingung) {
+                 // dann führe xy aus
+                }</p>
+
+        
+        <ul>
+            <li>
+                <h5>Was ist ein Vergleichsoperator und welche gibt es?</h5>
+            </li>
+        </ul>
+
+        <p id="answer"> Zuweisungsoperatoren = <br> Rechenoperatoren : + - / * % <br> logische Operatoren : !=  === >  >= <br> String-Operatoren : a += 2 </p>
+
+
+        <ul>
+            <li>
+                <h5>Welche Logischen Operatoren gibt es und wie werden sie angewendet?</h5>
+            </li>
+        </ul>
+
+        <p id="answer">!= <br> === <br> >=  Mit solchen Operatoren werden Bedingungen überprüft auf true oder false.
+        </p>
+
+
+        <ul>
+            <li>
+                <h5>Wie kann jQuery eingebunden werden?</h5>
+            </li>
+        </ul>
+
+        <p id="answer">In dem man jQuery herunterlädt, es in dem Ordnerstruktur hinzufügt und danach mit dem script-Tag verbindet.</p>
+
+
+        <ul>
+            <li>
+                <h5>Welche Quelle kann ich nutzen um herauszufinden was jQuery drauf hat?</h5>
+            </li>
+        </ul>
+
+        <p id="answer">jQuery.com</p>
+
+
+        <ul>
+            <li>
+                <h5>Wie kann ich mit jQuery "dynamisch" ein HTML-Element erzeugen?</h5>
+            </li>
+        </ul>
+
+        <p id="answer"></p>
+
+
+        <ul>
+            <li>
+                <h5>Wie kann ich ein HTML-Element mit jQuery selektieren?</h5>
+            </li>
+        </ul>
+
+        <p id="answer"> Mit $('.class') oder $('p') oder $(#id) etc.</p>
+
+
+        <ul>
+            <li>
+                <h5>Was passiert, wenn ich einen jQuery-Selektor verwende, welcher mehrere Elemente anspricht?</h5>
+            </li>
+        </ul>
+
+        <p id="answer">Es werden dementsprechend mehrere Elemente des ausgewählten Selektors im DOM manipuliert.</p>
+
+
+        <ul>
+            <li>
+                <h5>Wie können Cookies gesetzt bzw. gelesen werden? (mit einer JavaScript Library)</h5>
+            </li>
+        </ul>
+
+        <p id="answer"> ????</p>
+
+
+        <ul>
+            <li>
+                <h5>Wie kann ich mehrere Bilder mit einem Link umschließen?</h5>
+            </li>
+        </ul>
+
+        <p id="answer"> Mit .wrap  
+            <br> Beispielsweise: $("img").wrap( "<a></a>" ); </p>
+
+
+        <ul>
+            <li>
+                <h5></h5>
+            </li>
+        </ul>
+
+        <p id="answer"> </p>
+
+
+
+
+ 
+      
+    </div>
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>
