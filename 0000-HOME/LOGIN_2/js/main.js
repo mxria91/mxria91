@@ -1,28 +1,34 @@
-const MYPASSWORD = "MariaRepolust123"
+const MYPASSWORD = 123;
+let pwdInput = document.getElementById('pwd');
 
 // Eventlistener
 
 document.getElementById('loginBtn').addEventListener('click', function () {
     checkPWD();
+    console.log("Login Attempted");
 })
 
 
 // Function
-
 // VANILLA JS
 
 function checkPWD () {
-    if (document.getElementById('pwd').value == MYPASSWORD) {
+    if (pwdInput.value == MYPASSWORD) {
         document.getElementById('successMessage').innerHTML = "Login Successful";
         console.log('Login Successful');
     }
 
-    else if (document.getElementById('pwd').value == '') {
+    if (pwdInput.value == '') {
         document.getElementById('successMessage').innerHTML = "Please Enter Valid Password";
+        console.log("Try Again");
     }
 
-    else if (document.getElementById('pwd').value !== MYPASSWORD) {
+    if (pwdInput.value != MYPASSWORD) {
         document.getElementById('successMessage').innerHTML = "Password Incorrect";
         console.log('Wrong Password');
     }
 }
+
+
+
+
