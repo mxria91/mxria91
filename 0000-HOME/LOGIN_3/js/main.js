@@ -36,7 +36,7 @@ function checkPwd () {
    
 }
 
-// 
+
 // Reset Button
 
 document.getElementById('cancelBtn').addEventListener('click', function () {
