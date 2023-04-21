@@ -1,1 +1,49 @@
+:root {
 
+    --header-background-clr: #17E9E0;
+    --primary-font-clr: #F5E6CC;
+
+   
+
+
+}
+
+
+@font-face {
+    font-family: 'Londrina Solid', cursive;
+    src: url(../);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main-header {
+    width: 100%;
+    height: auto;
+    background-color: var(--header-background-clr);
+}
+
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-img {
+    width: 100px;
+    height: auto;
+}
+
+#logo {
+    font-size: 7rem;
+    color: var(--primary-font-clr);
+}
